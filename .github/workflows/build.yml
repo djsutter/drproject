@@ -1,0 +1,25 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Build out the Drupal infrastructure
+      run: |
+        git clone --branch main https://github.com/djsutter/bitnami-docker.git docker
+        make build
+        make drupal_build
+        make up
+        sleep 10
+
+    - name: Run installation and tests
+      run: |
+        make drupal_install
+        make drupal_migrate
+        make test
