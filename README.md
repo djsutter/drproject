@@ -1,4 +1,4 @@
-# Drupal Project
+# Sample Drupal Project
 
 [![Build Status][githubci-badge]][githubci]
 
