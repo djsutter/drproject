@@ -1,4 +1,4 @@
-# Composer Project template for Drupal WxT
+# Drupal Project
 
 [![Build Status][githubci-badge]][githubci]
 
