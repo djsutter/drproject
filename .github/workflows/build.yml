@@ -16,7 +16,7 @@ jobs:
         make build
         make docker_build
         make up
-        sleep 2
+        sleep 10
 
     - name: Run installation and tests
       run: |
