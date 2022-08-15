@@ -16,10 +16,13 @@ jobs:
         make build
         make docker_build
 
-    - name: Run installation and tests
+    - name: Run tests
       run: |
         make up
-        sleep 10
+        sleep 5
+        make test
+
+    - name: Run installation
+      run: |
         make drupal_install
         make drupal_migrate
-        make test
