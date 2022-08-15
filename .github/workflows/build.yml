@@ -15,11 +15,11 @@ jobs:
         git clone --branch main https://github.com/djsutter/bitnami-docker.git docker
         make build
         make docker_build
-        make up
-        sleep 10
 
     - name: Run installation and tests
       run: |
+        make up
+        sleep 10
         make drupal_install
         make drupal_migrate
         make test
