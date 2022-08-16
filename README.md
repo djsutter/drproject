@@ -1,6 +1,5 @@
 # Sample Drupal Project
 
-
 [![Build Status][githubci-badge]][githubci]
 
 An example composer project for the [Drupal WxT][wxt] distribution.
