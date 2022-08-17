@@ -18,11 +18,11 @@ jobs:
 
     - name: Run tests
       run: |
-#        make up
-#        sleep 5
         make test
 
     - name: Run installation
       run: |
+        make up
+        sleep 5
         make drupal_install
         make drupal_migrate
