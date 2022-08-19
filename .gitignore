@@ -22,6 +22,7 @@ compass_app_log.txt
 *.swp
 *.vi
 *.sass-cache
+.ddev
 
 # Node
 node_modules/
